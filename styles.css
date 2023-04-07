@@ -1,0 +1,21 @@
+body{
+	background-color:ivory;
+}
+.titleauthor{
+	text-align: center;
+	margin: auto;
+}
+
+.darkblue{
+	color: darkblue
+}
+
+.green{
+	color: forestgreen
+}
+.content{
+	margin: 70px;
+}
+.img{
+	text-align: center;
+}

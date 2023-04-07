@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My GitHub Pages Site</title>
+    <title>GitHub Pages Site for MEMO</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <h1>MEMO: A Multipurpose EMA and OCTA Retinal Image Dataset</h1>
-    <p>Welcome to my GitHub Pages site!</p>
+    <div class="titleauthor">
+      <h1>MEMO: A Multipurpose EMA and OCTA Retinal Image Dataset</h1><br>
+      <p class="darkblue">Chiao-Yi Wang, Faranguisse Kakhi Sadrieh, Yi-Ting Shen, Shih-En Chen, Sarah Kim,</p>
+	  <p class="darkblue">Victoria Chen, Achyut Raghavendra, Dongyi Wang, Osamah Saeedi, and Yang Tao</p>
+	  <p class="green">University of Maryland (College Park) and University of Marylad (Baltimore)</p><br>
+	</div>
+	
+	<div class="content">
+	  <p>The MEMO dataset is established for the development and evaluation of multimodal retinal image registration with both large vessel segmentation ground truth and registration ground turth.</p>
+	  <h2>Dataset Description</h2>
+	  <p>The MEMO dataset contains 30 pairs of EMA and OCTA images. For each image pair, 6 corresponding point pairs were manually annotated. In addition, each image comes with a carefully annotated large vessel segmentation mask.</p>
+	  <p>The following items are included for each image pair:</p>
+	  <ul>
+		<li>An EMA stacked image</li>
+		<li>A folder for EMA sequence images</li>
+		<li>A folder for three OCTA projection images</li>
+		<li>A large vessel segmentation mask of EMA image</li>
+		<li>A large vessel segmentation mask of OCTA image</li>
+	  </ul>
+	  <p> Six corresponding point pairs of every EMA and OCTA pair are provided in <em>RegistrationGT.csv</em>.
+	  <p class="img"><img src="Dataset_fig_v4.png" alt="Dataset example figure" style="width:800px;height:560px;"/></p><br>
+	  <h2>Dataset Download:</h2>
+	  <p><a href="https://drive.google.com/drive/folders/1SJHjluoPo9HKqYSZlc2T6c6tHPNpGkAB?usp=share_link" target="_blank">MEMO Dataset</a>
+	  <h2>Related paper:</h2>
+	  
+	</div>
   </body>
 </html>
