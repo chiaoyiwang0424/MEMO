@@ -16,20 +16,24 @@
 	  <p>The MEMO dataset is established for the development and evaluation of multimodal retinal image registration with both large vessel segmentation ground truth and registration ground turth.</p>
 	  <h2>Dataset Description</h2>
 	  <p>The MEMO dataset contains 30 pairs of EMA and OCTA images. For each image pair, 6 corresponding point pairs were manually annotated. In addition, each image comes with a carefully annotated large vessel segmentation mask.</p>
-	  <p>The following items are included for each image pair:</p>
+	  <p>The following raw images are included for each image pair:</p>
 	  <ul>
-		<li>An EMA stacked image</li>
-		<li>A folder for EMA sequence images</li>
-		<li>A folder for three OCTA projection images</li>
-		<li>A large vessel segmentation mask of EMA image</li>
-		<li>A large vessel segmentation mask of OCTA image</li>
+		<li>An EMA stacked image (Folder path: /MEMO/Original EMA stack)</li>
+		<li>A folder for EMA sequence images (Under preparation)</li>
+		<li>A folder for three OCTA projection images, including SVP, ICP and DCP layer projection images (Folder path: /MEMO/Original OCTA)</li>
 	  </ul>
-	  <p> Six corresponding point pairs of every EMA and OCTA pair are provided in <em>RegistrationGT.csv</em>.
+	  <p>For our own experiments, we scaled all OCTA SVP images to 256 * 256 and the EMA stacked images were scaled based on same sclaing factor. Therefore, we also provide the following scaled images:</p>
+	  <ul>
+		<li>Scaled EMA stacked image (Folder path: /MEMO/Scaled EMA stack)</li>
+		<li>Scaled OCTA SVP image (Folder path: /MEMO/Scaled OCTA SVP)</li>
+		<li>A large vessel segmentation mask of EMA image (Folder path: /MEMO/Scaled EMA stack lv seg ground truth)</li>
+		<li>A large vessel segmentation mask of OCTA image (Folder path: /MEMO/Scaled OCTA SVP lv seg ground truth)</li>
+	  </ul>
+	  <p> Six corresponding point pairs of every EMA and OCTA pair are provided in <em>RegistrationGT.csv</em> In this file, the pixel coordinate (x and y) of corresponding point pairs are listed. For example, the pixel coordinate (OCTA_x1, OCTA_y1) on OCTA image is matched to the pixel coordinate (EMA_x1, EMA_y1) on EMA stacked image. All the pixel coordinate are based on the scaled images.</p>.
 	  <p class="img"><img src="Dataset_fig_v4.png" alt="Dataset example figure" style="width:800px;height:560px;"/></p><br>
 	  <h2>Dataset Download:</h2>
-	  <p><a href="" target="_blank">MEMO Dataset</a>
-	  <!--<p><a href="https://drive.google.com/drive/folders/1SJHjluoPo9HKqYSZlc2T6c6tHPNpGkAB?usp=share_link" target="_blank">MEMO Dataset</a>-->
-	  <h2>Related paper:</h2>
+	  <p><a href="https://drive.google.com/drive/folders/1SJHjluoPo9HKqYSZlc2T6c6tHPNpGkAB?usp=share_link" target="_blank">MEMO Dataset</a>
+	  <!--<h2>Related paper:</h2>-->
 	  
 	</div>
   </body>
