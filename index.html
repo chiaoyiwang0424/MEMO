@@ -15,7 +15,7 @@
 	<div class="content">
 	  <p>The MEMO dataset is established for the development and evaluation of multimodal retinal image registration with both large vessel segmentation ground truth and registration ground turth.</p>
 	  <h2>Dataset Description</h2>
-	  <p>The MEMO dataset contains 30 pairs of EMA and OCTA images. For each image pair, 6 corresponding point pairs were manually annotated. In addition, each image comes with a carefully annotated large vessel segmentation mask.</p>
+	  <p>The MEMO dataset contains 30 pairs of EMA and OCTA images. For each image pair, 6 corresponding point pairs were manually annotated. In addition, each EMA image comes with a carefully annotated vessel segmentation mask.</p>
 	  <p>The following raw images are included for each image pair:</p>
 	  <ul>
 		<li>An EMA stacked image (Folder path: /MEMO/Original EMA stack)</li>
@@ -26,15 +26,25 @@
 	  <ul>
 		<li>Scaled EMA stacked image (Folder path: /MEMO/Scaled EMA stack)</li>
 		<li>Scaled OCTA SVP image (Folder path: /MEMO/Scaled OCTA SVP)</li>
-		<li>A large vessel segmentation mask of EMA image (Folder path: /MEMO/Scaled EMA stack lv seg ground truth)</li>
-		<li>A large vessel segmentation mask of OCTA image (Folder path: /MEMO/Scaled OCTA SVP lv seg ground truth)</li>
+		<li>A vessel segmentation mask of EMA image (Folder path: /MEMO/Scaled EMA stack seg ground truth)</li>
+		<!--<li>A large vessel segmentation mask of OCTA image (Folder path: /MEMO/Scaled OCTA SVP lv seg ground truth)</li>-->
 	  </ul>
 	  <p> Six corresponding point pairs of every EMA and OCTA pair are provided in <em>RegistrationGT.csv</em>. In this file, the pixel coordinate (x and y) of corresponding point pairs are listed. For example, the pixel coordinate (OCTA_x1, OCTA_y1) on OCTA image is matched to the pixel coordinate (EMA_x1, EMA_y1) on EMA stacked image. All the pixel coordinate are based on the scaled images.</p>.
 	  <p class="img"><img src="Dataset_fig_v4.png" alt="Dataset example figure" style="width:800px;height:560px;"/></p><br>
 	  <h2>Dataset Download:</h2>
 	  <p><a href="https://drive.google.com/drive/folders/1SJHjluoPo9HKqYSZlc2T6c6tHPNpGkAB?usp=share_link" target="_blank">MEMO Dataset</a>
-	  <!--<h2>Related paper:</h2>-->
-	  <h2>Contact Info:</h2>
+	  <h2>Paper:</h2>
+	  <p><a href="https://arxiv.org/abs/2309.14550" target="_blank">MEMO: Dataset and Methods for Robust Multimodal Retinal Image Registration with Large or Small Vessel Density Differences</a>
+	  <h2>Citation:</h2>
+	  <p>If you use this dataset for your research, please cite our paper.</p>
+	  <p>@misc{wang2023memo,
+      title={MEMO: Dataset and Methods for Robust Multimodal Retinal Image Registration with Large or Small Vessel Density Differences}, 
+      author={Chiao-Yi Wang and Faranguisse Kakhi Sadrieh and Yi-Ting Shen and Shih-En Chen and Sarah Kim and Victoria Chen and Achyut Raghavendra and Dongyi Wang and Osamah Saeedi and Yang Tao},
+      year={2023},
+      eprint={2309.14550},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+      }</p>
 	  <p>Chiao-Yi Wang (cyiwang@umd.edu)</p>
 	  
 	</div>
